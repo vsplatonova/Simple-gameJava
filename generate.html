@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Загадки</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript">
+        
+        var letters=["a","s","d","F","g","h","G","k","l","z","x","c8","4","n","m6",",",".","/"];
+        function readInt(){
+            return+document.getElementById("userAnswer").value;
+        }
+        
+        function write(text){
+            document.getElementById("passw").innerHTML=text;
+        }
+        function getRandomNumber(max){
+            return Math.round(Math.random()*max);
+        }
+        
+        function generateText(length){
+            var text="";
+            for (var i=0; i<length;i++){
+                var n=getRandomNumber(letters.length-1);
+                console.log(n,letters[n]);
+                text=text+letters[n];
+            }
+            return text;
+        }
+       function generateNumber(){
+            
+            var length=readInt();
+            var passw=generateText(length);
+           
+            write(passw);
+        }
+      
+    </script>
+    </head>
+
+<body>
+    <div class="content">
+        <div class="header"> 
+        <a href="index.html">Главная</a> 
+        <a href="puzzle.html">Загадки</a> 
+        <a href="puzzle2.html">Игра угадайка</a>
+        <a href="puzzle%20mono.html">Угадайка для двух игроков</a>
+        <a href="generate.html">Генератор паролей</a>
+         </div>
+        <h1>Генератор паролей</h1> 
+        <div class="box">
+         <p id="info">Введите длинну пароля<br> </p>
+         
+         <input type="text" id="userAnswer">
+            <br>
+            <h3 id="passw"></h3>
+            <a href="#" onclick="generateNumber();" id="button" > Сгенерировать </a>
+             <br>
+          
+           
+            
+            
+        </div>
+        </div>
+    <div class="footer">Copyright &copy; by Valentina Platonova </div>
+</body>
+
+</html>
