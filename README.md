@@ -1,7 +1,8 @@
 ## Тут вы можете ознакомиться с мною написанным сайтом, на  котором представленно несколько простых игр написанных на Java
 ### Language
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain-wordmark.svg" title="java" width="60" height="60"/>&nbsp;
- [посмотрите сами](https://vsplatonova.github.io/Simple-gameJava/)
+
+-Страница с сайтом находится тут [посмотрите сами](https://vsplatonova.github.io/Simple-gameJava/)
 
 # Hi there, I'm [Valentina](https://vsplatonova.github.io/Simple-gameJava/) ![](https://github.com/blackcater/blackcater/raw/main/images/Hi.gif) 
 
